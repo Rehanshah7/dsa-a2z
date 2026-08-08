@@ -58,6 +58,53 @@ void numberCrownPattern(int n){
         for(int j = 0; j <= i; j++){
             cout << j << " ";
         }
+        for (int k = 0; k < 2 * (n - i - 1); k++){
+            cout << "  ";
+        }
+        for(int l = 0; l <= i; l++){
+            cout << l << " ";
+        }
+            cout << endl;
+    }
+}
+
+void numberButterflyPattern(int n){
+    for(int i = 0; i < n; i++){
+        for(int j = 0; j <= i; j++){
+            cout << j << " ";
+        }
+        for (int k = 0; k < 2 * (n - i - 1); k++){
+            cout << "  ";
+        }
+        for(int l = 0; l <= i; l++){
+            cout << l << " ";
+        }
+            cout << endl;
+    }
+    for(int i = n - 2; i >= 0; i--){
+        for(int j = 0; j <= i; j++){
+            cout << j << " ";
+        }
+        for (int k = 0; k < 2 * (n - i - 1); k++){
+            cout << "  ";
+        }
+        for(int l = 0; l <= i; l++){
+            cout << l << " ";
+        }
+            cout << endl;
+    }
+}
+
+void matrixPattern(int n){
+    for (int i = 0; i < 2 * n - 1; i++){
+        for (int j = 0; j < 2 * n - 1; j++){
+            int top = i;
+            int left = j;
+            int bottom = (2 * n - 2) - i;
+            int right = (2 * n - 2) - j;
+            int minDist = min(min(top, bottom), min(left, right));
+            cout << n - minDist << " "; 
+        }
         cout << endl;
     }
 }
@@ -75,5 +122,9 @@ int main(){
     zeroOneTriangle(n);
     cout << endl;
     numberCrownPattern(n);
+    cout << endl;
+    numberButterflyPattern(n);
+    cout << endl;
+    matrixPattern(4);
     return 0;
 }

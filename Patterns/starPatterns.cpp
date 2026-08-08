@@ -168,6 +168,74 @@ void hollowDiamond(int n){
     }
 }
 
+void diagonalPattern(int n){
+    for (int i = 0; i < n; i++){
+        for (int j = 0; j < n; j++){
+            if(i == j || i + j == n - 1 || i == 0 || i == n - 1 || j == 0 || j == n - 1){
+                cout << "* ";
+            } else {
+                cout << "  ";
+            }
+        }
+        cout << endl;
+    }
+}
+
+void plusPattern(int n){
+    for (int i = 0; i <= n; i++){
+        for (int j = 0; j <= n; j++){
+            if(i == n/2 || j == (n/2)){
+                cout << "* ";
+            } else {
+                cout << "  ";
+            }
+        }
+        cout << endl;
+    }
+}
+
+void zigzagPattern(int n){
+    for (int i = 1; i <= 3; i++){
+        for (int j = 1; j <= n; j++){
+            if((i + j) % 4 == 0 || (i == 2) && (j % 4 == 0)){
+                cout << "* ";
+            } else {
+                cout << "  ";
+            }
+        }
+        cout << endl;
+    }
+}
+
+void hollowDiamondStar(int n){
+    for (int i = 0; i < n; i++){
+        for (int k = 0; k < n - i - 1; k++){
+            cout << " ";
+        }
+        for (int j = 0; j <= i; j++){
+            if(i == 0 || j == 0 || j == i){
+                cout << "* ";
+            } else {
+                cout << "  ";
+            }
+        }
+        cout << endl;
+    }
+    for (int i = n - 2; i >= 0; i--){
+        for (int k = 0; k < n - i - 1; k++){
+            cout << " ";
+        }
+        for (int j = 0; j <= i; j++){
+            if(i == 0 || i == n - 1 || j == 0 || j == i){
+                cout << "* ";
+            } else {
+                cout << "  ";
+            }
+        }
+        cout << endl;
+    }
+}
+
 int main(){
     int num = 10;
     butterflyPattern(num);
@@ -191,5 +259,13 @@ int main(){
     hollowSquareStar(num);
     cout << endl;
     symetricVoidPattern(num);
+    cout << endl;
+    diagonalPattern(num);
+    cout << endl;
+    plusPattern(num);
+    cout << endl;
+    zigzagPattern(num);
+    cout << endl;
+    hollowDiamondStar(num);
     return 0;
 }
