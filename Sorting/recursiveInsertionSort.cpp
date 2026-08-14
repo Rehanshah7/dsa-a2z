@@ -1,6 +1,24 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+void recursiveInsertionSort(int arr[], int n){
+    if(n == 1) return; //base case: if the array has one element, it is already sorted
+
+    // Recursively sort the first n - 1 elements
+    recursiveInsertionSort(arr, n - 1);
+
+    // Insertion Sort Algorithm
+        int key = arr[n - 1];
+        int j = n - 2;
+
+        while(j >= 0 && arr[j] > key){
+            arr[j + 1] = arr[j];
+            j--;
+        }
+
+        arr[j + 1] = key;
+}
+
 int main(){
     // Input the size of an array
     int n;
@@ -14,17 +32,7 @@ int main(){
         cin >> arr[i];
     }
 
-    // Insertion Sort Algorithm
-    for(int i = 1; i < n; i++){
-        int key = arr[i];
-        int j = i - 1;
-
-        while(j >= 0 && arr[j] > key){
-            arr[j + 1] = arr[j];
-            j--;
-        }
-        arr[j + 1] = key;
-    }
+    recursiveInsertionSort(arr, n);
 
     // Output the sorted array
     cout << "Sorted array: ";
@@ -35,5 +43,5 @@ int main(){
     return 0;
 }
 
-// Time Complexity: O(n^2) in the worst and average cases, O(n) in the best case (when the array is already sorted)
+// Time Complexity: O(n^2) in all cases (Best, Average, Worst)
 // Space Complexity: O(1) as we are using only a constant amount of space
