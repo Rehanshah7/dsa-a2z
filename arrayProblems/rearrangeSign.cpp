@@ -6,29 +6,53 @@ class Solution{
     int rearrangeSign(int arr[], int n){
         int pos[n/2];
         int neg[n/2];
+        int posIndex = 0;
+        int negIndex = 0;
         for(int i = 0; i < n; i++){
             if(arr[i] > 0){
-                pos[i] = arr[i];
+                pos[posIndex++] = arr[i];
             } else {
-                neg[i] = arr[i];
+                neg[negIndex++] = arr[i];
             }
         }
+
+        cout << "After separating the positive and negative elements: " << endl;
+        for (int i = 0; i < n/2; i++) {
+            cout << pos[i] << " " << neg[i] << " ";
+        }
+        cout << endl;
 
         for(int i = 0; i < n/2; i++){
-            cout << pos[i] << " ";
+            arr[i * 2] = pos[i];
+            arr[i * 2 + 1] = neg[i];
         }
 
-        for(int i = n/2; i < n; i++){
-            cout << neg[i] << " ";
-        }
-
+        cout << "After rearranging the elements: " << endl;
         for(int i = 0; i < n; i++){
-            if(i % 2 == 0){
-                arr[i] = pos[i];
+            cout << arr[i] << " ";
+        }
+        cout << endl;
+
+        return 0;
+    }
+
+    int optimalRearrangeSign(int arr[], int n){
+        int posIndex = 0;
+        int negIndex = 1;
+        for (int i = 0; i < n; i++){
+            if(arr[i] > 0){
+                arr[posIndex] = arr[i];
+                posIndex += 2;
+            } else {
+                arr[negIndex] = arr[i];
+                negIndex += 2;
             }
         }
 
-        return 0;
+        cout << "After rearranging the elements: " << endl;
+        for(int i = 0; i < n; i++){
+            cout << arr[i] << " ";
+        }
     }
 };
 
@@ -46,7 +70,7 @@ int main(){
 
     Solution obj;
     obj.rearrangeSign(arr, n);
-
+    obj.optimalRearrangeSign(arr, n);
 
     return 0;
 }
