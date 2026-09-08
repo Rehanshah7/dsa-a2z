@@ -22,3 +22,8 @@ int main(){
     Solution::printSumOfN(1, n, sum);
     cout << "The sum of first " << n << " natural numbers is: " << sum << endl;
 }
+
+// pseudo code
+// 1. Base condition is when our current number is greater than n, return from the function
+// 2. Add the current number to sum
+// 3. Recursively call the function with current incremented by 1

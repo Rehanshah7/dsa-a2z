@@ -28,3 +28,8 @@ int main(){
 
     return 0;
 }
+
+// pseudo code
+// 1. Create a new array of the same size as the input array
+// 2. Iterate through the input array and fill the new array with elements in reverse order of the input array
+// 3. Return the new array

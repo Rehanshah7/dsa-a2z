@@ -25,3 +25,7 @@ int main(){
 
     return 0;
 }
+
+// pseudo code
+// 1. Initialise the divisors vector and loop through the numbers from 1 to n
+// 2. check if the number is divisible by the loop variable, if yes then add it to the divisors vector

@@ -31,3 +31,12 @@ int main(){
 
     return 0;
 }
+
+// pseudo code
+// 1. Store the original number and initialise the sum with 0
+// 2. Get the number of digits in the number
+// 3. Loop through the digits of the number
+// 4. Get the last digit of the number by modulus 10
+// 5. Raise the last digit to the power of number of digits and add it to the sum and make sure you round off
+// 6. Remove the last digit from the original number by dividing it by 10
+// 7. Check if the sum is equal to the original number, if yes then it is an Armstrong number otherwise not

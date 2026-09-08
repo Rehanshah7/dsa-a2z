@@ -1,11 +1,15 @@
 #include <iostream>
+// string header file is included to use the string class
 #include <string>
 using namespace std;
 
+// enum is used to create a custom data type
 enum DayOfWeek{
     Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday, UNKNOWN
 };
 
+
+// this function takes a string as input and returns the corresponding enum value for the day of the week
 DayOfWeek getDayEnum(const string& day){
     if (day == "Monday") return Monday;
     else if (day == "Tuesday") return Tuesday;
@@ -23,6 +27,9 @@ int main(){
     string day;
     cout << "Enter a day of the week: ";
     cin >> day;
+
+    // The switch statement is used to execute different code blocks based on the value of the day enum
+    // case cannot have the string literal, so we use the enum values instead
 
    try{
      switch (getDayEnum(day)) {

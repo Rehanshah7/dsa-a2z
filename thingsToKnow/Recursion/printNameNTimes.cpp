@@ -23,3 +23,8 @@ int main(){
 
     Solution::printNameNTimes(name, 0, n);
 }
+
+// pseudo code
+// 1. Base condition is when count is equal to n, return from the function
+// 2. print the name
+// 3. Call the function recursively with count incremented by 1

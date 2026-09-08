@@ -1,7 +1,6 @@
 #include<iostream>
 using namespace std;
 
-
 //String Length class to demonstrate string length functionality
 class StringLength{
     public:

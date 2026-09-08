@@ -22,3 +22,9 @@ int main(){
 
     return 0;
 }
+
+// pseudo code
+// 1. Initialise the extra vairable and loop through the n digits
+// 2. get the last digit of the number by modulus 10
+// 3, multiply the extra variable by 10 and add the last digit to it
+// 4. divide the number by 10 in the same variable to remove the last digit

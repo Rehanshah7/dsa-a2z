@@ -30,3 +30,10 @@ int main(){
 
     return 0;
 }
+
+// pseudo code and it's time complexity is O(n) and space complexity is O(1)
+// 1. Initialize two pointers, left and right, to the start and end of the string respectively.
+// 2. While left is less than right, do the following:
+//    a. If the characters at the left and right pointers are not equal, return false.
+//    b. Increment left and decrement right.
+// 3. If the loop completes without returning false, return true.

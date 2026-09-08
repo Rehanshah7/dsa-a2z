@@ -18,3 +18,9 @@ int main(){
     cout << "The number of digits in " << n << " is: " << result << endl;
     return 0;
 }
+
+
+// pseudo code
+// 1. loop through the the n digits
+// 2. divide the number by 10 in the sdame variable to remove the last digit
+// 3. increment the count
