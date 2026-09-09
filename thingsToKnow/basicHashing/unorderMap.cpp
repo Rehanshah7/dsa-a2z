@@ -36,3 +36,14 @@ int main(){
 // 3
 // 4
 // 12 --> query n
+
+// pseudo code
+// 1. Take the number of elements in an array and construct an array of that size
+// 2. Inititalize a unordered_map to store the frequency of each element in the array.
+// 3. Loop through the array and increment the count of each element in the map using the element as a key.
+// 4. Take the number of queries as an input and loop through the each queries and ask the user to input the query element and check the frequency of that element in the map.
+
+// Why we prefer to use the unordered_map over the map?
+// - unordered_map is implemented using hash tables, which allows for average-case constant time complexity (O(1))
+//   for insertions, deletions, and lookups. This makes it faster than map for large datasets. Map take the average time complexity of
+//   O(log n) for insertions, deletions, and lookups because it is implemented using balanced binary search trees.

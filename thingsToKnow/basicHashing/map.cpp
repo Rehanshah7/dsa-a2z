@@ -36,3 +36,9 @@ int main(){
 // 3
 // 4
 // 12 --> query n
+
+// pseudo code
+// 1. Take the number of elements in an array and construct an array of that size
+// 2. Inititalize a map to store the frequency of each element in the array.
+// 3. Loop through the array and increment the count of each element in the map using the element as a key.
+// 4. Take the number of queries as an input and loop through the each queries and ask the user to input the query element and check the frequency of that element in the map.
