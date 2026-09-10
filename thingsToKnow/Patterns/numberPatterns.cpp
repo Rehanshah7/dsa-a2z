@@ -8,6 +8,11 @@ void numberTriangle(int n){
         }
         cout << endl;
     }
+
+    // pseudo code
+    // 1. First loop through the number of rows
+    // 2. Second loop through the number of columns
+    // 3. Print directly the column as a number in each column of the row
 }
 
 void reverseNumberTriangle(int n){
@@ -17,6 +22,11 @@ void reverseNumberTriangle(int n){
         }
         cout << endl;
     }
+
+    // pseudo code
+    // 1. First loop through the number of rows from n to 1 in reverse order
+    // 2. Second loop through the number of columns
+    // 3. Print directly the column as a number in each column of the row
 }
 
 void sameNumberTriangle(int n){
@@ -27,6 +37,11 @@ void sameNumberTriangle(int n){
         }
         cout << endl;
     }
+
+    // pseudo code
+    // 1. First loop through the number of rows
+    // 2. Second loop through the number of columns
+    // 3. Print directly the number in each column of the row and number must be equal to the row number + 1
 }
 
 void differentNumberTriangle(int n){
@@ -38,6 +53,12 @@ void differentNumberTriangle(int n){
         }
         cout << endl;
     }
+
+    // pseudo code
+    // 1. Initialize a variable num to 1
+    // 2. First loop through the number of rows
+    // 3. Second loop through the number of columns
+    // 4. Print directly the number in each column of the row and increment the num in the second loop
 }
 
 void zeroOneTriangle(int n){
@@ -51,6 +72,12 @@ void zeroOneTriangle(int n){
         }
         cout << endl;
     }
+
+    // pseudo code
+    // 1. First loop through the number of rows
+    // 2. Second loop through the number of columns
+    // 3. Print directly number 0 or number 1 based on the condition
+    //    here the condition is when (i + j) % 2 == 0 then print 1 else print 0
 }
 
 void numberCrownPattern(int n){
@@ -66,6 +93,15 @@ void numberCrownPattern(int n){
         }
             cout << endl;
     }
+
+    // pseudo code
+    // 1. First loop through the number of rows
+    // 2. Second loop through the number of columns
+    // 3. Print directly the column as a number in each column of the row
+    // 4. Print spaces in between the numbers
+    //    here the spaces will be calculated as 2 * (n - i - 1) where n is the total number of rows and i is the current row number
+    // 5. Third loop through the number of columns
+    // 6. Print directly the column as a number in each column of the row
 }
 
 void numberButterflyPattern(int n){
@@ -93,6 +129,22 @@ void numberButterflyPattern(int n){
         }
             cout << endl;
     }
+
+    // pseudo code
+    // 1. First loop through the number of rows
+    // 2. Second loop through the number of columns
+    // 3. Print directly the column as a number in each column of the row
+    // 4. Print spaces in between the numbers
+    //    here the spaces will be calculated as 2 * (n - i - 1) where n is the total number of rows and i is the current row number
+    // 5. Third loop through the number of columns
+    // 6. Print directly the column as a number in each column of the row
+    // 7. First loop through the number of rows from n - 2 to 0 in reverse order
+    // 8. Second loop through the number of columns
+    // 9. Print directly the column as a number in each column of the row
+    // 10. Print spaces in between the numbers
+    //    here the spaces will be calculated as 2 * (n - i - 1) where n is the total number of rows and i is the current row number
+    // 11. Third loop through the number of columns
+    // 12. Print directly the column as a number in each column of the row
 }
 
 void matrixPattern(int n){
@@ -107,6 +159,13 @@ void matrixPattern(int n){
         }
         cout << endl;
     }
+
+    // pseudo code
+    // 1. First loop through the number of rows from 0 to 2 * n - 1
+    // 2. Second loop through the number of columns from 0 to 2 * n - 1
+    // 3. Initialize the vairables top = i, left = j, bottom = (2 * n - 2) - i, right = (2 * n - 2) - j
+    // 4. Calculate the minimum distance from the four sides means how far I am from the four sides of the matrix and store its minimum value in a variable minDist
+    // 5. Print the number as n - minDist
 }
 
 int main(){
