@@ -41,3 +41,14 @@ int main(){
 
 // Time Complexity: O(n^2) in all cases (Best, Average, Worst)
 // Space Complexity: O(1) as we are using only a constant amount of space
+
+// pseudo code
+// 1. First iterate through all the number in an array starting from i=0 to n-1 as the last number will already be sorted
+// 2. Second iterate through the array from j=0 to n-i-1 (because the first i numbers are already sorted) as the last number will already be sorted
+// 3. Compare the next number with the previous number
+//    here if the next number is greater than the previous number then swap them
+// 4. Take the doswap variable as boolean value and initialize it to 0
+// 5. If the swap happens then change the value of doswap to 1
+// 6. After each iteration check if the value of doswap is 0 or not
+// 7. If the value of doswap is 0 then break the loop as the array is already sorted
+// 8. Print the sorted array

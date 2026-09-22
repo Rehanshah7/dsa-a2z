@@ -43,3 +43,14 @@ int main(){
 
 // Time Complexity: O(n^2) in all cases (Best, Average, Worst)
 // Space Complexity: O(1) as we are using only a constant amount of space
+
+// pseduo code
+// 1. Check the base condition that if the array has one element, it is already sorted
+// 2. Take the doSwap variable as boolean value and initialize it to false
+// 3. First iterate through all the number in an array starting from i=0 to n-1 as the last number will already be sorted
+// 4. Compare the next number with the previous number
+//    here if the next number is greater than the previous number then swap them
+// 5. Set the doSwap variable to true if the swapping happens
+// 6. If the doSwap is false, it means the array is already sorted so return
+// 7. Else recursively call the function with n-1 as the size of the array
+// 8. Print the sorted array

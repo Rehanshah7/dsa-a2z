@@ -39,3 +39,12 @@ int main(){
 
 // Time Complexity: O(n^2) in all cases (Best, Average, Worst)
 // Space Complexity: O(1) as we are using only a constant amount of space
+
+// pseudo code
+// 1. First iterate through all the numbers in an array starting from i=0 to n-1 as the last number will already be sorted
+// 2. Take the i and store it in a variable min
+// 3. Second iterate through the array from j=i+1 to n (because the first i numbers are already sorted)
+// 4. Compare the next number with the minimum number
+//    here if the next number is less than the minimum number then update the minimum number with the next number
+// 5. Swap the minimum number with the current number
+// 6. Print the sorted array

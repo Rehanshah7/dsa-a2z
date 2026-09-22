@@ -40,3 +40,15 @@ int main(){
     cout << endl;
     return 0;
 }
+
+// Time Complexity: O(n^2)
+// Space Complexity: O(1)
+
+// pseudo code
+// 1. First call the recursive function to sort the first n-1 elements and base case is when the array has one element return the array
+// 2. A variable key is initialized to the last element of the array
+// 3. A variable index is initialized to n-2
+// 4. Call the insertElement function to insert the key at the correct position
+// 5. In the insertElement function, while the index is greater than or equal to 0 and the element at the index is greater than the key, shift the element to the right
+// 6. Insert the key at the correct position
+// 7. Print the sorted array

@@ -37,3 +37,12 @@ int main(){
 
 // Time Complexity: O(n^2) in the worst and average cases, O(n) in the best case (when the array is already sorted)
 // Space Complexity: O(1) as we are using only a constant amount of space
+
+// pseudo code
+// 1. First loop start from i=1 to n-1 as the previous number will be used for the comparison
+// 2. Store the current element in the key variable
+// 3. j should be initialized to i-1
+// 4. Start a while loop based on the condition that j >= 0 and arr[j] > key
+//    here if the previous number is greater than the current number then assign the previous number to the current number and decremnt the j.
+// 5. Assign the key to the current number
+// 6. Print the sorted array

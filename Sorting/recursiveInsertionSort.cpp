@@ -45,3 +45,13 @@ int main(){
 
 // Time Complexity: O(n^2) in all cases (Best, Average, Worst)
 // Space Complexity: O(1) as we are using only a constant amount of space
+
+// pseudo code
+// 1. Base condition is when the array has one element, it is already sorted
+// 2. Make the recursive call to sort the first n-1 elements
+// 3. A variable key is initialized to the last element of the array
+// 4. A variable j is initialized to n-2
+// 5. Start a while loop based on the condition that j >= 0 and arr[j] > key
+//    here if the previous number is greater than the current number then assign the previous number to the current number and decremnt the j.
+// 6. Assign the key to the current number
+// 7. Print the sorted array

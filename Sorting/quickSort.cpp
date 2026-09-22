@@ -54,3 +54,17 @@ int main(){
 
 // Time Complexity: O(n log n) in all cases (Best, Average, Worst)
 // Space Complexity: O(1) as we are using only a constant amount of space
+
+// pseudo code
+// 1. Base condition is when low exceeds the high or the array only has one or less elements then the array is already sorted
+// 2. Partition the array around a pivot element such that all the elements smaller than the pivot are on the left side of the pivot and all the elements greater than the pivot are on the right side of the pivot
+// 3. Recursively call the quicksort function for the left subarray and the right subarray
+// 4. Inside the partition function
+//    here we have pivot element, i and j. i.e. pivot = arr[low], i = low + 1, j = high
+//    a. increment i until we find an element greater than or equal to the pivot
+//    b. decrement j until we find an element less than or equal to the pivot
+//    c. if i < j, swap the elements at i and j
+//    d. swap the pivot element with the element at index j
+//    e. return the index of the pivot element
+//    f. recursively call the quicksort function for the left subarray and the right subarray as pivot element is already returned
+// 5. Print the sorted array
