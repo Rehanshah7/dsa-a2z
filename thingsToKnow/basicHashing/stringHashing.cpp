@@ -13,19 +13,19 @@ int main(){
 
     int hash[26] = {0}; // Initialize the hash array with zeros
     for (int i = 0; i < n; i++){
-        hash[arr[i] - 'a']++;
+        hash[arr[i] - 'a']++; // increment the count of the current element in the hash array
     }
 
-        int q;
-        cout << "Enter the number of queries: ";
-        cin >> q;
-        while (q--)
-        {
-            char str;
-            cout << "Enter the string to check its frequency: ";
-            cin >> str;
-            cout << "The frequency of " << str << " is: " << hash[str - 'a'] << endl;
-        }
+    int q;
+    cout << "Enter the number of queries: ";
+    cin >> q;
+    while (q--)
+    {
+        char str;
+        cout << "Enter the string to check its frequency: ";
+        cin >> str;
+        cout << "The frequency of " << str << " is: " << hash[str - 'a'] << endl; // substracting 'a' from the current element to get the index of the hash array
+    }
 }
 
 // 9 --> Total numbers in the array
