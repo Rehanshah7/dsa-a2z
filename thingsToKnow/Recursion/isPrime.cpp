@@ -33,3 +33,8 @@ int main(){
 
     return 0;
 }
+
+// pseudo code
+// 1. Base condition is when n is less than or equal to 1, return from the function
+// 2. Loop through the numbers from 2 to the sqaure root of the number
+// 3. Check if the number is divisible by the loop variable, if yes then it is not a prime number

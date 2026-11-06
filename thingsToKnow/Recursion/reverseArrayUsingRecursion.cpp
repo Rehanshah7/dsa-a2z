@@ -35,3 +35,8 @@ int main(){
 
     return 0;
 }
+
+// pseudo code
+// 1. Base condition is when n is less than or equal to 0, return from the function
+// 2. Add the last element of the array to the vector
+// 3. Recursively call the function with n - 1

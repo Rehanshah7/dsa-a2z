@@ -26,3 +26,9 @@ int main(){
 
     return 0;
 }
+
+// pseudo code
+// 1. Enter a string
+// 2. use stl map to store the char and it's freq in descending order as per the freq
+// 3. Traverse through the map and inside it run the another loop till the freq of every char
+//    It prints the each char number of times the freq will be

@@ -28,3 +28,8 @@ int main(){
     Solution::printSumOfArray(arr, n, sum);
     cout << "The sum of first " << n << " natural numbers is: " << sum << endl;
 }
+
+// pseduo code
+// 1. Base condition is when n is equal to 0, return from the function
+// 2. Add the last element of the array to sum
+// 3. Recursively call the function with n - 1
